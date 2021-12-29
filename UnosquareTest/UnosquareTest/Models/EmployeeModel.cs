@@ -59,7 +59,7 @@ namespace UnosquareTest.Models
             return age;
         }
 
-        private static readonly string DefaultUserImage = Device.RuntimePlatform == Device.Android ? "defaultpp.jpg" : "Images/defaultpp.jpg";
+        private static readonly string DefaultUserImage = "defaultpp.jpg";
 
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;

@@ -32,7 +32,7 @@ namespace UnosquareTest.ViewModels
                     Name = "Maria Ibarra",
                     Birthdate = new DateTime(1988, 2, 14),
                     ExperienceYears = 8,
-                    ProfileImage = Device.RuntimePlatform == Device.Android ? "mariapp.jpg": "Images/mariapp.jpg"
+                    ProfileImage = "mariapp.jpg"
                 },
 
                 new EmployeeModel
@@ -41,7 +41,7 @@ namespace UnosquareTest.ViewModels
                     Name = "Kevin Perez",
                     Birthdate = new DateTime(1999, 11, 8),
                     ExperienceYears = 3,
-                    ProfileImage = Device.RuntimePlatform == Device.Android ? "kevinpp.jpg": "Images/kevinpp.jpg"
+                    ProfileImage ="kevinpp.jpg"
                 }
             };
         }

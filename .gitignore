@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/UnosquareTest/UnosquareTest/bin/Debug/netstandard2.0
+/UnosquareTest/UnosquareTest/obj/Debug/netstandard2.0
+/UnosquareTest/UnosquareTest/obj/Release/netstandard2.0
+/UnosquareTest/UnosquareTest/obj
+/UnosquareTest.Services/obj
+/UnosquareTest.Services/bin/Debug/netstandard2.0
+/UnosquareTest/UnosquareTest.iOS/obj
+/UnosquareTest/UnosquareTest.iOS/bin/iPhone/Debug
+/UnosquareTest/UnosquareTest.Android/obj
+/UnosquareTest/UnosquareTest.Android/bin/Debug
