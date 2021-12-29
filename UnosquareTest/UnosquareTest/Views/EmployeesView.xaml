@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:UnosquareTest.ViewModels"
+             xmlns:behaviors="clr-namespace:UnosquareTest.Behaviors"
+             x:Class="UnosquareTest.Views.EmployeesView"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <viewModels:EmployeesViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <DataTemplate x:Key="EmployeesTemplate">
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*" Margin="5">
+                <Image Grid.RowSpan="4" Source="{Binding ProfileImage}}" WidthRequest="80" HeightRequest="80"/>
+                <Label Grid.Column="1" Text="{Binding Name}" FontAttributes="Bold"/>
+                <Label Grid.Row="1" Grid.Column="1"  Text="{Binding Age, StringFormat='Edad: {0} años'}"/>
+                <Label Grid.Row="2" Grid.Column="1"  Text="{Binding ExperienceYears, StringFormat='Experiencia: {0} años'}"/>
+            </Grid>
+        </DataTemplate>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView Margin="12">
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="20">
+                <Label Text="{Binding PackageName}"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand" 
+                    FontSize="Title"/>
+
+                <Grid RowDefinitions="Auto, Auto" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+                    <Image Source="{Binding NewEmployee.ProfileImage}}" WidthRequest="120" HeightRequest="120"/>
+                    <Button Grid.Row="1" Text="Take picture!" Command="{Binding OnTakePhotoCommand}"/>
+                </Grid>
+
+                <Grid RowDefinitions="Auto, Auto, Auto, Auto" ColumnDefinitions="2*" 
+                        VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+                    <StackLayout Grid.ColumnSpan="2">
+                        <Label Text="Nombre"/>
+                        <Entry Text="{Binding NewEmployee.Name}" Placeholder="Nombre completo" >
+                            <Entry.Behaviors>
+                                <behaviors:TextValidationBehavior/>
+                            </Entry.Behaviors>
+                        </Entry>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="1">
+                        <Label Text="Fecha de nacimiento"/>
+
+                        <DatePicker MaximumDate="{Binding MaxDate}"
+                            Date="{Binding NewEmployee.Birthdate}" />
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="1" Grid.Column="1">
+                        <Label Text="Edad actual"/>
+                        <Label  Text="{Binding NewEmployee.Age, StringFormat='{0} años'}"
+                                VerticalTextAlignment="Center" FontSize="Subtitle"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
+                        <Label Text="Años de experiencia"/>
+                        <Entry Text="{Binding NewEmployee.ExperienceYears}" Placeholder="Años de experiencia" >
+                            <Entry.Behaviors>
+                                <behaviors:NumbersValidationBehavior/>
+                            </Entry.Behaviors>
+                        </Entry>
+                    </StackLayout>
+
+                    <Button Grid.Row="3" Grid.ColumnSpan="2" Text="Añadir empleado" Command="{Binding OnAddNewEmployeeCommand}"/>
+                </Grid>
+
+                <CollectionView ItemsSource="{Binding Employees}" ItemTemplate="{StaticResource EmployeesTemplate}"
+                                VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

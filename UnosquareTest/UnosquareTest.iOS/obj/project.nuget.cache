@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "N6cdkHJTDLK0TFJZTTEwbMWlVCAWJEO5SbJMryDIO2dKzOxVNhVJEKD7AKLMRDPSxduZ8CzI/nrz0te0LYgB5Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Windows\\source\\repos\\UnosquareTest\\UnosquareTest\\UnosquareTest.iOS\\UnosquareTest.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Windows\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Windows\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
