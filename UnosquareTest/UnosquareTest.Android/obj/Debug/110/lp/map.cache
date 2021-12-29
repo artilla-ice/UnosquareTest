@@ -17,6 +17,7 @@ Xamarin.AndroidX.CursorAdapter.dll
 Xamarin.AndroidX.CustomView.dll
 Xamarin.AndroidX.DocumentFile.dll
 Xamarin.AndroidX.DrawerLayout.dll
+Xamarin.AndroidX.ExifInterface.dll
 Xamarin.AndroidX.Fragment.dll
 Xamarin.AndroidX.Interpolator.dll
 Xamarin.AndroidX.Legacy.Support.Core.UI.dll
@@ -87,3 +88,4 @@ androidx.asynclayoutinflater.asynclayoutinflater.aar
 androidx.legacy.legacy-support-core-ui.aar
 androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
+androidx.exifinterface.exifinterface.aar

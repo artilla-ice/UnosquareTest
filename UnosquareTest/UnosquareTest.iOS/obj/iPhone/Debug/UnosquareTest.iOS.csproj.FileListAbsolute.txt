@@ -1,5 +1,7 @@
 C:\Users\Windows\source\repos\UnosquareTest\UnosquareTest\UnosquareTest.iOS\bin\iPhone\Debug\UnosquareTest.iOS.exe
 C:\Users\Windows\source\repos\UnosquareTest\UnosquareTest\UnosquareTest.iOS\bin\iPhone\Debug\UnosquareTest.iOS.pdb
+C:\Users\Windows\source\repos\UnosquareTest\UnosquareTest\UnosquareTest.iOS\bin\iPhone\Debug\Plugin.Media.dll
+C:\Users\Windows\source\repos\UnosquareTest\UnosquareTest\UnosquareTest.iOS\bin\iPhone\Debug\Plugin.Media.pdb
 C:\Users\Windows\source\repos\UnosquareTest\UnosquareTest\UnosquareTest.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
 C:\Users\Windows\source\repos\UnosquareTest\UnosquareTest\UnosquareTest.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
 C:\Users\Windows\source\repos\UnosquareTest\UnosquareTest\UnosquareTest.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
@@ -63,5 +65,3 @@ C:\Users\Windows\source\repos\UnosquareTest\UnosquareTest\UnosquareTest.iOS\obj\
 C:\Users\Windows\source\repos\UnosquareTest\UnosquareTest\UnosquareTest.iOS\obj\iPhone\Debug\UnosquareTest.iOS.csproj.CopyComplete
 C:\Users\Windows\source\repos\UnosquareTest\UnosquareTest\UnosquareTest.iOS\obj\iPhone\Debug\UnosquareTest.iOS.exe
 C:\Users\Windows\source\repos\UnosquareTest\UnosquareTest\UnosquareTest.iOS\obj\iPhone\Debug\UnosquareTest.iOS.pdb
-C:\Users\Windows\source\repos\UnosquareTest\UnosquareTest\UnosquareTest.iOS\bin\iPhone\Debug\Plugin.Media.dll
-C:\Users\Windows\source\repos\UnosquareTest\UnosquareTest\UnosquareTest.iOS\bin\iPhone\Debug\Plugin.Media.pdb

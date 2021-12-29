@@ -24,6 +24,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.CustomView.dll",
 		"Xamarin.AndroidX.DocumentFile.dll",
 		"Xamarin.AndroidX.DrawerLayout.dll",
+		"Xamarin.AndroidX.ExifInterface.dll",
 		"Xamarin.AndroidX.Fragment.dll",
 		"Xamarin.AndroidX.Interpolator.dll",
 		"Xamarin.AndroidX.Legacy.Support.Core.UI.dll",

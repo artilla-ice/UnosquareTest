@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net.Mime;
 using System.Runtime.CompilerServices;
 using UnosquareTest.Models;
 using UnosquareTest.Services;
@@ -57,11 +58,16 @@ namespace UnosquareTest.ViewModels
                     var newFile = Path.Combine(FileSystem.CacheDirectory, photo.FileName);
                     using (var stream = await photo.OpenReadAsync())
                     {
-                        using (var newStream = File.OpenWrite(newFile))
-                            await stream.CopyToAsync(newStream);
-                    }
+                        var resizedStream = ResizeImage(stream, photo.FullPath);
+                        await stream.CopyToAsync(resizedStream);
 
-                    this.NewEmployee.ProfileImage = newFile;
+                        var resizedImage = File.Create(newFile);
+                        resizedStream.Seek(0, SeekOrigin.Begin);
+                        await resizedStream.CopyToAsync(resizedImage);
+                        resizedImage.Close();
+
+                        this.NewEmployee.ProfileImage = newFile;
+                    }
                 }
             }
             catch (FeatureNotSupportedException fnsEx)
@@ -108,6 +114,24 @@ namespace UnosquareTest.ViewModels
             Employees.Add(NewEmployee);
 
             NewEmployee = new EmployeeModel();
+        }
+
+        private Stream ResizeImage(Stream resultStream, string path)
+        {
+            byte[] imageData;
+
+            Stream stream = resultStream;
+            using (MemoryStream ms = new MemoryStream())
+            {
+                stream.CopyTo(ms);
+                imageData = ms.ToArray();
+            }
+
+            IResizeImageManager resizer = DependencyService.Get<IResizeImageManager>();
+            byte[] resizedimage = resizer.ResizeImage(imageData, 100, 100, path);
+
+            Stream resizedImageStream = new MemoryStream(resizedimage);
+            return resizedImageStream;
         }
 
         public Command OnTakePhotoCommand { get; set; }

@@ -37,6 +37,9 @@ androidx.annotation.CallSuper;androidx.annotation.CallSuper
 AndroidX.Annotations.ICheckResult, Xamarin.AndroidX.Annotation;androidx.annotation.CheckResult
 AndroidX.Annotations.ICheckResult;androidx.annotation.CheckResult
 androidx.annotation.CheckResult;androidx.annotation.CheckResult
+AndroidX.Annotations.IChecksSdkIntAtLeast, Xamarin.AndroidX.Annotation;androidx.annotation.ChecksSdkIntAtLeast
+AndroidX.Annotations.IChecksSdkIntAtLeast;androidx.annotation.ChecksSdkIntAtLeast
+androidx.annotation.ChecksSdkIntAtLeast;androidx.annotation.ChecksSdkIntAtLeast
 AndroidX.Annotations.IColorInt, Xamarin.AndroidX.Annotation;androidx.annotation.ColorInt
 AndroidX.Annotations.IColorInt;androidx.annotation.ColorInt
 androidx.annotation.ColorInt;androidx.annotation.ColorInt
@@ -55,6 +58,9 @@ androidx.annotation.DimenRes;androidx.annotation.DimenRes
 AndroidX.Annotations.IDimension, Xamarin.AndroidX.Annotation;androidx.annotation.Dimension
 AndroidX.Annotations.IDimension;androidx.annotation.Dimension
 androidx.annotation.Dimension;androidx.annotation.Dimension
+AndroidX.Annotations.IDoNotInline, Xamarin.AndroidX.Annotation;androidx.annotation.DoNotInline
+AndroidX.Annotations.IDoNotInline;androidx.annotation.DoNotInline
+androidx.annotation.DoNotInline;androidx.annotation.DoNotInline
 AndroidX.Annotations.IDrawableRes, Xamarin.AndroidX.Annotation;androidx.annotation.DrawableRes
 AndroidX.Annotations.IDrawableRes;androidx.annotation.DrawableRes
 androidx.annotation.DrawableRes;androidx.annotation.DrawableRes
@@ -724,6 +730,12 @@ androidx.drawerlayout.widget.DrawerLayout$DrawerListener;androidx.drawerlayout.w
 AndroidX.DrawerLayout.Widget.DrawerLayout+IDrawerListenerImplementor, Xamarin.AndroidX.DrawerLayout;mono.androidx.drawerlayout.widget.DrawerLayout_DrawerListenerImplementor
 AndroidX.DrawerLayout.Widget.DrawerLayout.IDrawerListenerImplementor;mono.androidx.drawerlayout.widget.DrawerLayout_DrawerListenerImplementor
 mono.androidx.drawerlayout.widget.DrawerLayout_DrawerListenerImplementor;mono.androidx.drawerlayout.widget.DrawerLayout_DrawerListenerImplementor
+AndroidX.ExifInterface.Media.ExifInterface+IExifStreamType, Xamarin.AndroidX.ExifInterface;androidx.exifinterface.media.ExifInterface$ExifStreamType
+AndroidX.ExifInterface.Media.ExifInterface.IExifStreamType;androidx.exifinterface.media.ExifInterface$ExifStreamType
+androidx.exifinterface.media.ExifInterface$ExifStreamType;androidx.exifinterface.media.ExifInterface$ExifStreamType
+AndroidX.ExifInterface.Media.ExifInterface+IIfdType, Xamarin.AndroidX.ExifInterface;androidx.exifinterface.media.ExifInterface$IfdType
+AndroidX.ExifInterface.Media.ExifInterface.IIfdType;androidx.exifinterface.media.ExifInterface$IfdType
+androidx.exifinterface.media.ExifInterface$IfdType;androidx.exifinterface.media.ExifInterface$IfdType
 AndroidX.Fragment.App.FragmentManager+IBackStackEntry, Xamarin.AndroidX.Fragment;androidx.fragment.app.FragmentManager$BackStackEntry
 AndroidX.Fragment.App.FragmentManager.IBackStackEntry;androidx.fragment.app.FragmentManager$BackStackEntry
 androidx.fragment.app.FragmentManager$BackStackEntry;androidx.fragment.app.FragmentManager$BackStackEntry
